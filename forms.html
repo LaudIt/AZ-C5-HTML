@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport">
+      <title>Forms Assignment</title>
+      <link rel="icon" href="images/favicon.png" type="favicon">
+    </head>
+    <body>
+      <h2> User Profile Information</h2>
+      <div>
+      <div><fieldset><form action="/action_page.php">
+        <!--Task 3: Basic User Information -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+          <!-- Task 4: Additional Information -->
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+ 
+          <label for="dob">Date of Birth:</label><br>
+          <input type="date" id="dob" name="dob">
+        </div><br>
+        <div><fieldset>
+          <label for="country">Country of Residence:</label><br>
+          <select id="country" name="country">
+              <option value="Nigeria">Nigeria</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Ghana">Ghana</option>
+              </select>
+               <!-- Users Interests,testing radio and checkboxes -->
+         <br>     
+        
+            <legend>User's Interest:</legend>
+
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female" required><br>
+
+            <label> Hobbies:</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading"> Reading</label>
+
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports"> Sports</label>
+
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music"> Music</label>
+
+            <input type="checkbox" id="travel" name="hobbies" value="travel">
+            <label for="travel"> Travel</label><br>
+        </div>
+        <!--adding the text area and submit button-->
+        <form action="/action_page.php">
+          <p><label for="Feedback">Feedback:</label></p>
+          <textarea id="Feedback" name="Feedback" rows="4" cols="50"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+        
+
+      </form>
+    </body>
+</html>
